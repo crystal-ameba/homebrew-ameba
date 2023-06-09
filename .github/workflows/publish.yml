@@ -1,8 +1,9 @@
 name: brew pr-pull
+
 on:
   pull_request_target:
-    types:
-      - labeled
+    types: [labeled]
+
 jobs:
   pr-pull:
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
@@ -26,7 +27,7 @@ jobs:
         uses: Homebrew/actions/git-try-push@master
         with:
           token: ${{ github.token }}
-          branch: main
+          branch: master
 
       - name: Delete branch
         if: github.event.pull_request.head.repo.fork == false
