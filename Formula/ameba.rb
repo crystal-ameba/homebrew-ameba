@@ -4,8 +4,8 @@ class Ameba < Formula
   license "MIT"
 
   stable do
-    url "https://github.com/crystal-ameba/ameba/archive/v1.5.0.tar.gz"
-    sha256 "c8f9b6c7f832a8e939f8f30b83ef960c25f66a0927d6e6461f2d0b20f1880476"
+    url "https://github.com/crystal-ameba/ameba/archive/v1.6.0.tar.gz"
+    sha256 "a7fb3ff1805003065ee80bfca6d7474bfdaa9a2821d91dd8c5856ad2b63fbc14"
   end
 
   livecheck do
