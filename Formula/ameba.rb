@@ -16,6 +16,8 @@ class Ameba < Formula
   depends_on "crystal"
 
   def install
+    ENV["CRFLAGS"] = "--release -Dpreview_mt"
+
     system "make"
 
     bin.install "bin/ameba"
