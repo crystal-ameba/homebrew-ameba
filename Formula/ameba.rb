@@ -2,8 +2,8 @@ class Ameba < Formula
   desc "Static code analysis tool for Crystal"
   homepage "https://github.com/crystal-ameba/ameba"
 
-  url "https://github.com/crystal-ameba/ameba/archive/refs/tags/v1.6.2.tar.gz"
-  sha256 "e05de5b5fa6f2c394fcf4cdeb1b1c2ff99f06a7663256acd759c50f2c1251b48"
+  url "https://github.com/crystal-ameba/ameba/archive/refs/tags/v1.6.3.tar.gz"
+  sha256 "355aade793f920eeb81572f79c53c5e260ac0268d86d574f77051689af2675f2"
 
   license "MIT"
   head "https://github.com/crystal-ameba/ameba.git", branch: "master"
