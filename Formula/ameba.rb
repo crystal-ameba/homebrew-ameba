@@ -13,7 +13,7 @@ class Ameba < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
-  depends_on "crystal"
+  depends_on "crystal" => :build
 
   def install
     ENV["CRFLAGS"] = "--release -Dpreview_mt"
