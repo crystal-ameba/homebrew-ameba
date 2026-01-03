@@ -4,6 +4,10 @@ on:
   pull_request_target:
     types: [labeled]
 
+permissions:
+  contents: write
+  pull-requests: read
+
 jobs:
   pr-pull:
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
