@@ -23,6 +23,5 @@ class Ameba < Formula
     bin.install "bin/ameba"
 
     ohai "Thanks for using Ameba. Happy linting 🐞"
-    ohai "Please support: https://www.patreon.com/veelenga"
   end
 end
