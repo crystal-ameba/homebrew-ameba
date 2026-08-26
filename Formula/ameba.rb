@@ -2,8 +2,8 @@ class Ameba < Formula
   desc "Static code analysis tool for Crystal"
   homepage "https://github.com/crystal-ameba/ameba"
 
-  url "https://github.com/crystal-ameba/ameba/archive/refs/tags/v1.6.4.tar.gz"
-  sha256 "b6bfe1206aa3eec31d95bc60dfea4b8b9d316be6ff4130c4a55fb48f61a7f918"
+  url "https://github.com/crystal-ameba/ameba/archive/refs/tags/v1.7.0.tar.gz"
+  sha256 "b4bc22946285befd1571dfadff78e258180e10e7912fb7a91af53f6896c5e512"
 
   license "MIT"
   head "https://github.com/crystal-ameba/ameba.git", branch: "master"
@@ -16,7 +16,7 @@ class Ameba < Formula
   depends_on "crystal" => :build
 
   def install
-    ENV["CRFLAGS"] = "--release -Dpreview_mt"
+    ENV["CRFLAGS"] = "--release"
 
     system "make"
 
